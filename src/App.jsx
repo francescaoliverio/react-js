@@ -5,6 +5,7 @@ import logo from "./assets/logo.png";
 import List from "./components/List";
 import Button from "./components/Button";
 import Container from "./components/Container";
+import ProductList from "./components/ProductList";
 
 import { dummyTasks, doneTasks, pendingTasks } from "./data/dummyTasks.js";
 
@@ -50,6 +51,7 @@ function App() {
       <div className="container">
         <List listElements={tasks} />
         {/* {status === "done" ? <List listElements={doneTasks} /> : <List listElements={pendingTasks} />} */}
+        <ProductList />
       </div>
     </div>
   );
